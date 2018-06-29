@@ -1,0 +1,48 @@
+- let & const
+    - use let & const instead of var
+    - reuse of const value throws error
+
+- arrow function
+    - normal
+      function myFnc(){...     }
+    - arrow
+      const myFnc = (args) => {....}
+
+     - eliminates many of the problems with using "this"
+     - clarifys by replacing this
+     - can ommit (args) if only one argument is to be used (ie const myfnc = name =>{} )
+     - can ommit (args) if no argument is to be used (ie const myfnc = () =>{} )
+
+     - can use return function for 1+ statements
+     - for only 1 statement we can use
+==============================================================================================
+
+Export and import modules
+
+- allows import & export of diff modules / components
+
+ex:
+
+const person = {
+    name : 'Foo',
+    age : 23
+}
+
+.. other file
+
+export default person;
+
+import {person} from './exportTest.js'
+console.log(person);
+
+- if you use default you can change var name on input, otherwise it needs to be the same
+- can use alias on import, ie (import { joe as joeseph } from ./utility.js)
+
+==============================================================================================
+Understanding classes
+
+
+
+
+
+==============================================================================================
