@@ -5,5 +5,5 @@ const person = {
 }
 
 // noinspection JSAnnotator
-export const person;
+export default person;
 

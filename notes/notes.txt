@@ -38,11 +38,18 @@ console.log(person);
 - if you use default you can change var name on input, otherwise it needs to be the same
 - can use alias on import, ie (import { joe as joeseph } from ./utility.js)
 
-==============================================================================================
-Understanding classes
-
-
-
 
 
 ==============================================================================================
+Spread and Rest Operators
+
+Spread
+const newArray = [...oldArray,1,2]   // pulls old array values and adds 1,2
+const newObject = [...oldObject,newProp:5]  // copies oldObject and adds new field newProp intialized to 5
+
+Rest
+used to merge a list of function argruments into an array
+
+function sortArgs(... args) {
+     return args.sort();
+}
